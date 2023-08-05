@@ -1,10 +1,9 @@
 const searchWord = document.getElementById('textWord');
 
-let palavra = 'Ola mundo';
+const palavra = 'Ola mundo';
 
 if(palavra.includes('mundo')){
-    searchWord.innerHTML =  'Essa palavra existe!';
-    return true;
+    searchWord.innerHTML = 'Essa palavra existe!';
+}else{
+    searchWord.innerHTML = 'Não existe essa palavra!';
 }
- searchWord.innerHTML = 'Não existe essa palavra!'
- return false;
