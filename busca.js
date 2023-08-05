@@ -1,9 +1,13 @@
 const searchWord = document.getElementById('textWord');
 
-const palavra = 'Ola mundo';
+const db = "Essa é a frase encontrada no banco de dados. Ola mundo";
 
-if(palavra.includes('mundo')){
+const palavra = document.querySelector('#search');
+
+function buscaPalavra(){
+  if(db.toLowerCase().includes(palavra.value.toLowerCase())){
     searchWord.innerHTML = 'Essa palavra existe!';
-}else{
-    searchWord.innerHTML = 'Não existe essa palavra!';
+    return;
+  }
+   searchWord.innerHTML = 'Não existe essa palavra!';  
 }
