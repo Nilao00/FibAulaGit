@@ -1,15 +1,11 @@
-const searchWord = document.getElementById('textWord');
+const searchWord = document.querySelector('#textWord');
 
 const db = "Essa é a frase encontrada no banco de dados. Ola mundo";
 
 const palavra = document.querySelector('#search');
 
-/**
- * A function that searches for a word and displays a message based on its existence.
- *
- * @param {string} palavra.value - The word to be searched.
- * @return {undefined} No return value.
- */
+// repositorio do QA
+
 function buscaPalavra(){
   if(!palavra.value){
     searchWord.innerHTML = 'Digite alguma palavra!';
