@@ -1,4 +1,4 @@
-const searchWord = document.getElementById('textWord');
+const searchWord = document.querySelector('#textWord');
 
 const db = "Essa é a frase encontrada no banco de dados. Ola mundo";
 
